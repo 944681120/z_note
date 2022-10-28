@@ -9,9 +9,8 @@
 		
 		
 	b、代码阅读帮助
-		01)、 Rainbow Brackets				// 彩虹花括号，有助于阅读代码
-		02)、 Better C++ Syntax				// C++语法高亮
-		03)、 highlight						// 关键字高亮
+		01)、 Better C++ Syntax				// C++语法高亮
+		02)、 highlight						// 关键字高亮
 	
 	
 	c、代码编写
