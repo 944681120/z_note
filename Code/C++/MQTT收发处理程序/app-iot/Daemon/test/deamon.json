@@ -1,0 +1,52 @@
+{
+    "deamon_time": 10,
+    "app_list": {
+        "default_open": 
+        {
+            "app-cjq": "/tmp/app-cjq ..............."
+        },
+        "default_close":
+        {
+            "frpc": "nohup ~/llz/soft/frp/frpc -c ~/llz/soft/frp/frpc.ini &"
+        } 
+    },
+    "json": {
+        "headers": {
+            "deviceName": "刘工测试设备",
+            "productId": "1676421127983206400",
+            "async": true,
+            "traceparent": "00-f587c679c4fd70dba8cc7f67ff0da5cc-c19c474fed6bf22b-01"
+        },
+        "messageId": "1683669153472946177",
+        "deviceId": "1676421655949611008",
+        "timestamp": 1690252981905,
+        "functionId": "proxy_set",
+        "inputs": [
+            {
+                "name": "name",
+                "value": "asdas"
+            },
+            {
+                "name": "switch",
+                "value": "asdas"
+            },
+            {
+                "name": "proxy_ip",
+                "value": "23dasd"
+            },
+            {
+                "name": "proxy_port",
+                "value": 123
+            },
+            {
+                "name": "remote_ip",
+                "value": "asdasdc"
+            },
+            {
+                "name": "remote_port",
+                "value": 1234
+            }
+        ],
+        "messageType": "INVOKE_FUNCTION"
+    }
+}

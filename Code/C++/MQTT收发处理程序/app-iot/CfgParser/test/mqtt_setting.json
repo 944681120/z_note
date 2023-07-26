@@ -1,0 +1,45 @@
+{
+    "param": {
+        "mqtt": [
+            {
+                "host": "120.238.64.59",
+                "port": 1475,
+                "clientid": "1234567890",
+                "user": "testUser",
+                "passwd": 87356212,
+                "topic_up": "/v1/devices/1234567890/command",
+                "topic_up_ack": "/v1/devices/1234567890/commandResponse",
+                "topic_dn": "/v1/devices/1234567890/command",
+                "topic_dn_ack": "/v1/devices/1234567890/commandResponse"
+            },
+            {
+                "host": "120.238.64.59",
+                "port": [
+                    {
+                        "port1": 1475
+                    },
+                    {
+                        "port2": 158
+                    },
+                    {
+                        "clientid": null,
+                        "port1": 1475
+                    }
+                ],
+                "clientid": "1234567890",
+                "user": "87356212",
+                "passwd": 87356212,
+                "topic_up": "/v1/devices/1234567890/command",
+                "topic_up_ack": "/v1/devices/1234567890/commandResponse",
+                "topic_dn": "/v1/devices/1234567890/command",
+                "topic_dn_ack": "/v1/devices/1234567890/commandResponse"
+            }
+        ],
+        "rs485CMD": {
+            "coder": "010300000002C40B",
+            "openCameraPower": "06100006000102000141C6",
+            "clossCameraPower": "0610000600010200008006",
+            "ass": 154
+        }
+    }
+}
