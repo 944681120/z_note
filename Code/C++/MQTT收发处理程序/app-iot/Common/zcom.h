@@ -2,6 +2,7 @@
 #define ZCOM_H
 
 #include <string.h>
+#include <string>
 #include <chrono>
 #include <thread>
 
@@ -16,6 +17,7 @@
     #define PRI_DEBUG(fmt, ...)
 #endif // Debug
 
+using namespace std;
 namespace LLZ
 {
     /* 判断进程是否在运行，RETURN：PID 或 -1 */
@@ -24,6 +26,8 @@ namespace LLZ
     int kill_process(const char* process_name);
     /* 开启一个线程 */
     int creatThread(void* (*pFunc)(void*), void* arg = nullptr);
+    /* HEX转字符串 */
+    string hexToStr(const unsigned char* hexBuf, int bufLen);
 };
 
 #endif

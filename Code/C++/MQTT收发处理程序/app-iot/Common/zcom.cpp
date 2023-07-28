@@ -56,4 +56,20 @@ int creatThread(void *(*pFunc)(void *), void *arg)
     return 0;
 }
 
+string hexToStr(const unsigned char* hexBuf, int bufLen)
+{
+    string str;
+    for (int i = 0; i < bufLen; i++)
+    {
+        char str1 = (hexBuf[i] >> 4)    + '0';
+        char str2 = (hexBuf[i] & 0xf)   + '0';
+        if ( str1 > '9' )   str1 += 7;  // 'A' - '10'
+        if ( str2 > '9' )   str2 += 7;        
+        str += str1;
+        str += str2;
+    }
+    
+    return str;
+}
+
 }   // 命名空间tail

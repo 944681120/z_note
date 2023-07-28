@@ -228,9 +228,13 @@ int IotProject::jsonAnalysisWork()
                 this->m->jsonp.cfg_get_str("/functionId", str);
                 if ( str.compare("proxy_set") == 0 )
                 {
-                    this->proxyHandler("frpc.ini");
+                    this->proxyHandler("CfgParser/test/frpc.ini");
                 }
                 if ( str.compare("app_opt") == 0 )
+                {
+                    this->appOptHandler();
+                }
+                if ( str.compare("ssh") == 0 )
                 {
                     this->appOptHandler();
                 }
